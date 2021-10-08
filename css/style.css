@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 138%;
+    color: #050505;
+}
+
+.header {
+    /* background-color: #D7D7D7; */
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 70px;
+    min-height: 100vh;
+}
+
+/* .header__2bg {
+    width: 1802.3px;
+    height: 1373.99px;
+    right: 0;
+    background-color: #000;
+    position: absolute;
+    transform: rotate(9.67deg);
+} */
+
+/* .header::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+
+} */
+
+.header__container {
+    max-width: 1350px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* .header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.header__item:last-child .header__link{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    margin-left: 80px;
+    border-radius: 30px;
+    padding: 17px 21px;
+}
+
+.header__content {
+    font-family: Raleway;
+    margin-bottom: 120px;
+}
+
+.header__subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 54px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+}
+.header__title-desc {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: -15px;
+    color: #919191;
+}
+
+.header__social-list {
+    display: flex;
+}
+.header__social-item {
+    background-color: #C4C4C4;
+    margin-right: 30px;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.header__social-img {
+    display: block;
+}
