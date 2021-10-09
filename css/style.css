@@ -300,7 +300,7 @@ body {
 .services-text {
     font-size: 14px;
     line-height: 19px;
-    width: 350px;
+    max-width: 350px;
     text-align: justify;
 }
 
