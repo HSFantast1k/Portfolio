@@ -190,7 +190,11 @@ body {
 }
 
 .blockquote-link::before,
-.blockquote-link::after {
+.blockquote-link::after,
+.aboutme-link2::before,
+.aboutme-link2::after,
+.contact-send::before,
+.contact-send::after {
     content: '';
     position: absolute;
     width: 2px;
@@ -200,11 +204,15 @@ body {
     transform: translateY(-50%);
 }
 
-.blockquote-link::before {
+.blockquote-link::before,
+.aboutme-link2::before,
+.contact-send::before {
     left: -20px;
 }
 
-.blockquote-link::after {
+.blockquote-link::after,
+.aboutme-link2::after,
+.contact-send::after {
     right: -20px;
 }
 
@@ -219,12 +227,12 @@ body {
     padding: 0 10px;
 }
 
-.about__me {
+.aboutme {
     text-align: center;
     margin-bottom: 100px;
 }
 
-/* .about__me-link {
+/* .aboutme-link {
     font-family: Montserrat;
     font-size: 30px;
     line-height: 38px;
@@ -234,11 +242,11 @@ body {
     padding: 10px 45px 15px;
 } */
 
-.about__me-text {
+.aboutme-text {
     margin: 100px auto 50px;
     max-width: 700px;
 }
-.about__me-link2 {
+.aboutme-link2 {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 600;
@@ -246,26 +254,14 @@ body {
     position: relative;
 }
 
-.about__me-link2::before,
-.about__me-link2::after {
-    content: '';
-    width: 2px;
-    height: 32px;
+.aboutme-link2::before,
+.aboutme-link2::after,
+.contact-send::before,
+.contact-send::after {
     background-color: #000;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.about__me-link2::before {
-    left: -20px;
-}
-
-.about__me-link2::after {
-    right: -20px;
-}
-
-.end__line {
+.end-line {
     margin-top: 80px;
     display: block;
     margin: 86px auto 0;
@@ -349,3 +345,133 @@ body {
 .country-flag {
     border-radius: 50%;
 }
+
+.contact {
+    /* padding: 150px 0 80px; */
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(0, 0, 0, 0.16) 100%), #FFFFFF;
+    padding-bottom: 80px;
+}
+.contact__inner {
+    text-align: center;
+    padding: 0 15px;
+}
+
+
+.contact-text {
+    margin: 80px auto 0;
+    max-width: 750px;
+}
+
+.contact-line {
+    margin: 40px auto 80px;
+}
+
+.contact__form {
+    margin: 0 auto;
+    max-width: 610px;
+    padding-bottom: 60px;
+}
+.contact-input {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #8B8B8B;
+
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    margin-bottom: 50px;
+    height: 50px;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid #000;
+    padding: 0 15px;
+}
+.contact-textarea {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #8B8B8B;
+
+    width: 100%;
+    resize: none;
+    height: 185px;
+    background-color: inherit;
+    border-right: none;
+    border: none;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid #000;
+    padding: 15px;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #8B8B8B;
+}
+
+.contact-send {
+    position: relative;
+    border: none;
+    background-color: inherit;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1A1A1A;
+    text-align: center;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.backTo__link {
+    font-family: Montserrat;
+    color: #fff;
+    position: relative;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.backTo__link::before {
+    content: '';
+    background-image: url('../images/Back-To-Arrows.svg');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 50%;
+    transform: translateX(50%);
+    top: -20px;
+}
+
+
+.footer__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.footer__social-item {
+    margin: 0 15px;
+}
+
+.author__text {
+    font-family: Nunito;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.author__text span{
+    font-weight: 700;
+}
+
