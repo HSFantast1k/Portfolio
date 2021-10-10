@@ -9,8 +9,13 @@
     .blockquote {
         padding: 45px 15px 40px 80px;
     }
+
     .info {
         padding: 80px 0;   
+    }
+
+    .header__top {
+        padding-top: 50px;
     }
 }
 
@@ -47,12 +52,14 @@
         padding: 15px 10px;
         margin-bottom: 0;
     }
+
     .header__btn {
         display: inline-block;
+        top: 52px;
     }
 
     .header__btn.header__btn--active{
-        top: 95px;
+        top: 65px;
         height: 40px;
     }
 
@@ -90,8 +97,14 @@
     .blockquote {
         padding: 40px 15px 35px 50px;
     }
+
     .info {
         padding: 60px 0;   
+    }
+
+    /* Padding-top */
+    .header__top {
+        padding-top: 40px;
     }
 }
 
@@ -115,6 +128,9 @@
     .header__social-img {
         width: 32px;
     }
+    .service-subimg {
+        margin-left: -36px;
+    }
 
     /* Grid-media */
     .skills__box {
@@ -125,6 +141,20 @@
     /* Block */
     .blockquote {
         padding-left: 35px;
+    }
+
+    /* Padding-top  */
+
+    .header__top {
+        padding-top: 30px;
+    }
+    
+    .header__btn {
+        top: 42px;
+    }
+
+    .header__btn.header__btn--active{
+        top: 55px;
     }
 }
 
@@ -157,6 +187,28 @@
     /* Block */
     .info {
         padding: 50px 0;   
+    }
+
+    .header__top {
+        padding-top: 30px;
+    }
+    
+    .header__btn {
+        top: 42px;
+    }
+
+    /* Padding-top  */
+
+    .header__top {
+        padding-top: 20px;
+    }
+    
+    .header__btn {
+        top: 32px;
+    }
+
+    .header__btn.header__btn--active{
+        top: 45px;
     }
 }
 
