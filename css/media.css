@@ -277,10 +277,10 @@
 @media (max-width: 400px){
     /* Grid-media */
     .skills__box-img {
-        max-width: 190px;
+        max-width: 180px;
     }
     .skills__box {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
     }
 
     /* Text */
@@ -298,6 +298,14 @@
 }
 
 @media (max-width: 350px){
+    /* Grid-media */
+    .skills__box-img {
+        max-width: 100%;
+    }
+    .skills__box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     /* Text */
     .header__title {
