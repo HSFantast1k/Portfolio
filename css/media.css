@@ -123,6 +123,9 @@
     }
 
     /* Block */
+    .header {
+        background-position: right;
+    }
     .blockquote {
         padding: 40px 20px 30px 50px;
     }
