@@ -85,6 +85,15 @@ body {
     flex-wrap: wrap;
 }
 
+.logo__link {
+    font-family: 'Birthstone', cursive;
+    font-size: 65px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Header-btn__burger  */
+
 .header__btn {
     display: none;
     width: 40px;

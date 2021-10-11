@@ -104,7 +104,8 @@
 
     /* Padding-top */
     .header__top {
-        padding-top: 40px;
+        /* padding-top: 40px; */
+        padding-top: 56px;
     }
 }
 
@@ -156,7 +157,8 @@
     /* Padding-top  */
 
     .header__top {
-        padding-top: 30px;
+        /* padding-top: 30px; */
+        padding-top: 46px;
     }
     
     .header__btn {
@@ -200,10 +202,6 @@
     .info {
         padding: 50px 0;   
     }
-
-    .header__top {
-        padding-top: 30px;
-    }
     
     .header__btn {
         top: 42px;
@@ -212,7 +210,7 @@
     /* Padding-top  */
 
     .header__top {
-        padding-top: 20px;
+        padding-top: 36px;
     }
     
     .header__btn {
