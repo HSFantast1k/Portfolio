@@ -128,8 +128,18 @@
     .header__social-img {
         width: 32px;
     }
+
+    .services-item {
+        margin: 0 15px 30px;
+    }
+
+    .services-title {
+        margin-left: 65px;
+        margin-bottom: 25px;
+    }
+
     .service-subimg {
-        margin-left: -36px;
+        margin-left: -10px;
     }
 
     /* Grid-media */
@@ -183,7 +193,7 @@
         max-width: 190px;
     }
     .skills__box {
-        grid-gap: 12px 5px;
+        grid-gap: 40px 5px;
     }
 
     /* Block */
