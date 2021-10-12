@@ -88,6 +88,9 @@
     .header__btn.header__btn--active{
         top: 65px;
         height: 40px;
+        /* Animation */
+        transform: none;
+        transition: none;
     }
 
     .header__btn.header__btn--active span{

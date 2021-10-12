@@ -105,6 +105,9 @@ body {
     right: 10px;
     top: 80px;
     cursor: pointer;
+    /* Animation */
+    transform: rotate(180deg);
+    transition: all 0.5s;
 }
 
 .header__btn span{
