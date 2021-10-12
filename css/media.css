@@ -18,7 +18,7 @@
 
     /* Block */
     .header {
-        background-image: url(../images/header-bg.jpg);
+        background-image: url(../images/header-Litebg.jpg);
     }
     .blockquote {
         padding: 45px 20px 40px 50px;
@@ -35,6 +35,19 @@
 
 
 @media (max-width: 710px){
+    /* Block */
+    .header {
+        background-position: right;
+        background-image: url('../images/header-mobbg.jpg');
+    }
+    .blockquote {
+        padding: 40px 20px 30px 50px;
+    }
+
+    .info {
+        padding: 60px 0;   
+    }
+
     /* Header-menu */
     .header__list.header__list--active {
         transform: translateY(0);
@@ -120,18 +133,6 @@
         font-size: 26px;
         line-height: 34px;
         padding: 7px 41px 12px;
-    }
-
-    /* Block */
-    .header {
-        background-position: right;
-    }
-    .blockquote {
-        padding: 40px 20px 30px 50px;
-    }
-
-    .info {
-        padding: 60px 0;   
     }
 
     /* Padding-top */
