@@ -200,7 +200,11 @@ body {
 
 .blockquote {
     background-color: #1D1D1D;
-    padding: 55px 15px 50px 100px;
+}
+
+.blockquote__container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 /* .blockquote::before {
@@ -216,6 +220,7 @@ body {
 
 .blockquote__content {
     color: #fff;
+    padding: 55px 15px 50px 100px;
 }
 .blockquote-title {
     font-family: Montserrat;
@@ -275,7 +280,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 10px;
 }

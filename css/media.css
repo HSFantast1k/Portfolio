@@ -20,7 +20,7 @@
     .header {
         background-image: url(../images/header-Litebg.jpg);
     }
-    .blockquote {
+    .blockquote__content {
         padding: 45px 20px 40px 50px;
     }
 
@@ -40,7 +40,7 @@
         background-position: right;
         background-image: url('../images/header-mobbg.jpg');
     }
-    .blockquote {
+    .blockquote__content {
         padding: 40px 20px 30px 50px;
     }
 
@@ -196,7 +196,7 @@
     }
 
     /* Block */
-    .blockquote {
+    .blockquote__content {
         padding: 40px 20px;
     }
 
@@ -283,9 +283,10 @@
     .skills__box-img {
         max-width: 180px;
     }
-    .skills__box {
-        /* grid-template-columns: repeat(1, 1fr); */
-    }
+
+    /* .skills__box {
+        grid-template-columns: repeat(1, 1fr);
+    } */
 
     /* Text */
     .header__title {
