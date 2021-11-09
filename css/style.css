@@ -6,14 +6,15 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: inherit;
 }
 
 ul {
     list-style: none;
 }
 
-.button-link {
+.section__title {
+    display: inline-block;
     font-family: Montserrat;
     font-size: 30px;
     line-height: 38px;
@@ -249,8 +250,8 @@ body {
 
 .blockquote-link::before,
 .blockquote-link::after,
-.aboutme-link2::before,
-.aboutme-link2::after,
+.aboutme-link::before,
+.aboutme-link::after,
 .contact-send::before,
 .contact-send::after {
     content: '';
@@ -263,19 +264,19 @@ body {
 }
 
 .blockquote-link::before,
-.aboutme-link2::before,
+.aboutme-link::before,
 .contact-send::before {
     left: -20px;
 }
 
 .blockquote-link::after,
-.aboutme-link2::after,
+.aboutme-link::after,
 .contact-send::after {
     right: -20px;
 }
 
 .info {
-    padding: 135px 0;
+    padding: 125px 0;
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
 }
 
@@ -304,7 +305,7 @@ body {
     margin: 100px auto 50px;
     max-width: 700px;
 }
-.aboutme-link2 {
+.aboutme-link {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 600;
@@ -312,8 +313,8 @@ body {
     position: relative;
 }
 
-.aboutme-link2::before,
-.aboutme-link2::after,
+.aboutme-link::before,
+.aboutme-link::after,
 .contact-send::before,
 .contact-send::after {
     background-color: #000;
@@ -364,13 +365,6 @@ body {
     text-align: center;
 }
 
-/* .skills-link {
-    font-family: Montserrat;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 700;
-    border: 5px solid #000;
-} */
 
 .skills-title {
     text-align: left;
@@ -387,9 +381,16 @@ body {
     grid-gap: 25px;
     align-items: center;
 }
+
 .skills-item {
     text-align: center;
+    transition: all .5s;
 }
+
+.skills-item:hover {
+    transform: scale(120%);
+}
+
 .skills__box-img {
     margin-bottom: 15px;
 }
@@ -405,14 +406,121 @@ body {
     border-radius: 50%;
 }
 
-/* .portfolio {
+.portfolio {
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(0, 0, 0, 0.16) 100%), #FFFFFF;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .portfolio__inner {
     text-align: center;
-} */
+}
+
+.portfolio__content-start, 
+.portfolio__content-more {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 30px;
+    color: #fff;
+}
+
+.portfolio__content-more {
+    display: none;
+}
+
+.portfolio__content-more--active {
+    display: grid;
+}
+
+.portfolio__content-item {
+    width: 380px;
+    min-height: calc((380px * 9) / 16);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.portfolio__content-item::after {
+    content: '';
+    transition: all .5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__content-item:hover{
+    transform: scale(110%);
+}
+
+.portfolio__content-item:hover .portfolio__item-link{
+    opacity: 1;
+}
+
+.portfolio__content-item:hover::after{
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+
+.portfolio__item-link {
+    font-family: 'Mohave', sans-serif;
+    font-weight: 500;
+    opacity: 0;
+    font-size: 25px;
+    line-height: 32px;
+    padding: 15px 10px;
+    width: 80%;
+    background-color: #000;
+    border-radius: 15px;
+    transition: all .5s;
+    z-index: 3;
+}
+
+.portfolio__item-link--white {
+    background-color: #fff;
+    color: #000;
+}
+
+.portfolio-btn {
+    margin-top: 50px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    position: relative;
+    transition: all .5s;
+}
+
+.portfolio-btn--active {
+    font-size: 0;
+    width: 70px;
+}
+
+.portfolio-btn--active::after {
+    content: 'To hide';
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    width: 100%;
+}
+
 
 .contact {
     /* padding: 150px 0 80px; */

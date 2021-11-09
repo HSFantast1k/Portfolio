@@ -4,6 +4,10 @@ $(function () {
         $('.header__list').toggleClass('header__list--active')
     });
 
+    $('.portfolio-btn').on('click', function() {
+        $('.portfolio-btn').toggleClass('portfolio-btn--active')
+        $('.portfolio__content-more').toggleClass('portfolio__content-more--active')
+    });
 
 
     // Плавний скрол вверх по якорям

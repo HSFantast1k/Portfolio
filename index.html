@@ -16,6 +16,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+  <!-- Mohave -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap" rel="stylesheet">
+  <!-- Mohave End -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -41,10 +46,25 @@
               <span></span>
             </button>
             <ul class="header__list">
-              <li class="header__item"><a class="header__link" href="#aboutme">About me</a></li>
-              <li class="header__item"><a class="header__link" href="#skills">Skills</a></li>
-              <li class="header__item"><a class="header__link" href="#portfolio">Portfolio</a></li>
-              <li class="header__item"><a class="header__link" href="#contact">CONTACT ME</a></li>
+              <li class="header__item">
+                <a class="header__link" href="#aboutme" target="_blank">
+                  About me
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#skills" target="_blank">
+                  Skills</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#portfolio" target="_blank">
+                  Portfolio
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#contact">
+                  CONTACT ME
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -102,11 +122,11 @@
   <section class="info">
     <div class="container">
       <div class="aboutme" id="aboutme">
-        <a class="aboutme-link button-link" href="#">ABOUT ME</a>
+        <h3 class="section__title">ABOUT ME</h3>
         <p class="aboutme-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel quae ducimus quisquam sit
           repudiandae reiciendis sapiente ea cum soluta accusamus laboriosam placeat quaerat, voluptatibus doloribus
           repellendus illum. Ducimus, quos labore!</p>
-        <a class="aboutme-link2" href="#">EXPLORE</a>
+        <a class="aboutme-link" href="#">EXPLORE</a>
         <img class="end-line" src="images/end_line.svg" alt="">
       </div>
       <div class="services">
@@ -134,7 +154,7 @@
         <img class="end-line" src="images/end_line.svg" alt="">
       </div>
       <div class="skills">
-        <a class="skills-link button-link" href="#" id="skills">SKILLS</a>
+        <a class="section__title" href="#" id="skills">SKILLS</a>
         <h2 class="skills-title">USING NOW:</h2>
         <div class="skills__box">
           <div class="skills-item">
@@ -144,6 +164,10 @@
           <div class="skills-item">
             <img class="skills__box-img" src="images/Program__logo/CSS.svg" alt="CSS3" height="125px"">
               <h6 class=" skills__box-title">CSS3</h6>
+          </div>
+          <div class="skills-item">
+            <img class="skills__box-img" src="images/Program__logo/SASS.svg" alt="SASS" height="125px">
+            <h6 class="skills__box-title">SASS</h6>
           </div>
           <div class="skills-item">
             <img class="skills__box-img" src="images/Program__logo/Python.png" alt="Python" w height="125px">
@@ -173,10 +197,6 @@
 
         <h2 class="skills-title">Goals:</h2>
         <div class="skills__box">
-          <div class="skills-item">
-            <img class="skills__box-img" src="images/Program__logo/SASS.svg" alt="SASS" height="125px">
-            <h6 class="skills__box-title">SASS</h6>
-          </div>
           <div class="skills-item">
             <img class="skills__box-img" src="images/Program__logo/Gulp.png" alt="Gulp" height="125px">
             <h6 class="skills__box-title">Gulp</h6>
@@ -217,24 +237,66 @@
     </div>
   </section>
 
-  <!-- <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio__inner">
-        <a class="portfolio-link button-link" href="#" id="skills">PORTFOLIO</a>
-        <div class="portfolio__slider-box">
-          <div class="portfolio__slider-item">
-            <img class="portfolio__slider-img" src="images/MyCompany.png" alt="">
-            <h4 class="portfolio__slider-title"></h4>
+        <a class="section__title" href="#" id="skills">PORTFOLIO</a>
+        <div class="portfolio__content-box">
+          <div class="portfolio__content-start">
+            <div class="portfolio__content-item"
+              style="background-image: url('images/portfolio__img/My_portfolio.png')">
+              <a class="portfolio__item-link portfolio__item-link--white" href="#">MyPortfolio</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Index_Food.png')">
+              <a class="portfolio__item-link" href="#">IndexFood</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Joomhost.png')">
+              <a class="portfolio__item-link" href="#">JoomHost</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Roadster.png')">
+              <a class="portfolio__item-link portfolio__item-link--white" href="#">Roadster</a>
+            </div>
+            <div class="portfolio__content-item"
+              style="background-image: url('images/portfolio__img/space_tourism.png')">
+              <a class="portfolio__item-link portfolio__item-link--white" href="#">Космический туризм</a>
+            </div>
+            <div class="portfolio__content-item"
+              style="background-image: url('images/portfolio__img/typical_typesetter.png')">
+              <a class="portfolio__item-link" href="#">Типичный верстальщик</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content-more">
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Kuba.png')">
+              <a class="portfolio__item-link" href="#">Kuba</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Solar.png')">
+              <a class="portfolio__item-link" href="#">Solar</a>
+            </div>
+            <div class="portfolio__content-item"
+              style="background-image: url('images/portfolio__img/Auto_Express.png')">
+              <a class="portfolio__item-link portfolio__item-link--white" href="#">Auto Express</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/Productly.png')">
+              <a class="portfolio__item-link" href="#">Productly</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/portfolio__img/My_Company.png')">
+              <a class="portfolio__item-link portfolio__item-link--white" href="#">My Company</a>
+            </div>
+            <div class="portfolio__content-item" style="background-image: url('images/partfolio_gif.gif')">
+              <a class="portfolio__item-link" href="#">And a lot more in my Git :D</a>
+            </div>
           </div>
         </div>
+        <button class="portfolio-btn">More</button>
       </div>
     </div>
-  </section> -->
+  </section>
 
 
   <section class="contact">
     <div class="contact__inner">
-      <a class="contact__link button-link" href="#" id="contact">CONTACT</a>
+      <a class="section__title" href="#" id="contact">CONTACT</a>
       <p class="contact-text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, iusto? Magnam, nostrum aliquid consequuntur
         esse est maiores rem impedit adipisci asperiores, omnis placeat atque non accusantium praesentium rerum dolor
@@ -255,17 +317,17 @@
     <a class="backTo__link" href="#header">BACK TO TOP</a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="https://www.facebook.com/" target="_blank">
           <img class="footer__social-img" src="images/social__img/facebook-footer.svg" alt="Facebook">
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="https://www.google.com/" target="_blank">
           <img class="footer__social-img" src="images/social__img/in-footer.svg" alt="In">
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+        <a class="footer__social-link" href="mailto:bohdankoval3012@gmail.com" target="_blank">
           <img class="footer__social-img" src="images/social__img/email-footer.svg" alt="Email">
         </a>
       </li>
