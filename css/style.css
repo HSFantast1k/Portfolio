@@ -361,7 +361,7 @@ body {
 }
 
 .skills {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -426,6 +426,7 @@ body {
 
 .portfolio__content-more {
     display: none;
+    margin-top: 50px;
 }
 
 .portfolio__content-more--active {
