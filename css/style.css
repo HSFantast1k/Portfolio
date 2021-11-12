@@ -478,6 +478,7 @@ body {
 
 .portfolio__content-item:hover{
     transform: scale(110%);
+    box-shadow: -2px 3px 17px 0px #000;
 }
 
 .portfolio__content-item:hover .portfolio__item-link{
