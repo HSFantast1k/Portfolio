@@ -194,10 +194,26 @@ body {
     margin-bottom: 5px;
 }
 .header__title-desc {
+    display: inline-block;
     font-size: 25px;
     font-weight: 800;
     margin-top: -15px;
     color: #00ff64;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.header__title-desc::after{
+    content: "Kyiv - GMT+2, online 7:00-21:30";
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all .5s;
+    color: #514040;
+}
+
+.header__title-desc:hover::after{
+    opacity: 1;
 }
 
 .header__social-link {
@@ -568,6 +584,7 @@ body {
     margin: 0 auto;
     max-width: 610px;
     padding-bottom: 60px;
+    position: relative;
 }
 .contact-input {
     font-family: Montserrat;
@@ -614,7 +631,11 @@ body {
 }
 
 .contact-send {
-    position: relative;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
     border: none;
     background-color: inherit;
     font-family: Montserrat;
@@ -623,6 +644,57 @@ body {
     line-height: 20px;
     cursor: pointer;
 }
+
+/*Style Popup window  Start*/
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    background-image: url('../images/paper_plane.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    min-height: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+.popup-text {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    font-family: Raleway;
+    color: #00abff;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+/*Style Popup window  Finish*/
 
 .footer {
     background-color: #1A1A1A;

@@ -38,6 +38,7 @@
             <img class="logo__img" src="images/logo.svg" alt="logo">
           </a> -->
           <a class="logo__link" href="#">
+            <!-- <img src="images/logo.jpg" alt="BK"> -->
             BK
           </a>
           <nav class="header__menu">
@@ -70,7 +71,10 @@
         <div class="header__content">
           <p class="header__subtitle">Hi, I am</p>
           <h1 class="header__title">Bohdan Koval</h1>
-          <p class="header__title-desc">Front-end Developer / Python Developer</p>
+          <p class="header__title-desc">Front-end Developer / Python Developer
+            <br>
+            <!-- <span>Kyiv - GMT+2, online 7:00-21:00</span> -->
+          </p>
         </div>
         <div class="header__social-link">
           <ul class="header__social-list">
@@ -311,8 +315,18 @@
         <input class="contact-input" type="text" placeholder="ENTER YOUR EMAIL*">
         <input class="contact-input" type="text" placeholder="PHONE NUMBER">
         <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
+        <a class="open-popup" href="#" >
+          <button class="contact-send">SUBMIT</button>
+        </a>
       </form>
-      <button class="contact-send">SUBMIT</button>
+      <div class="popup-bg">
+        <div class="popup">
+            <img class="close-popup" src="images/close.png" alt="">
+            <p class="popup-text">
+              Спасибо, форма отправлена 
+            </p>
+        </div>
+   </div>
     </div>
   </section>
 

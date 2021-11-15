@@ -9,7 +9,17 @@ $(function () {
         $('.portfolio__content-more').toggleClass('portfolio__content-more--active')
     });
 
-
+    // Popup window 
+    $('.open-popup').click(function(e) {
+        e.preventDefault();
+        $('.popup-bg').fadeIn(800);
+        $('html').addClass('no-scroll');
+    });
+    
+    $('.close-popup').click(function() {
+        $('.popup-bg').fadeOut(800);
+        $('html').removeClass('no-scroll');
+    });
     // Плавний скрол вверх по якорям
     // Menu
     $(document).ready(function(){
