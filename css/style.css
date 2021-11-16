@@ -632,6 +632,7 @@ body {
 
 .contact-send {
     position: absolute;
+    width: 65px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -643,6 +644,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
+    /* width: 60px; DELETED*/
 }
 
 /*Style Popup window  Start*/
@@ -682,6 +684,7 @@ body {
     font-weight: 700;
     font-size: 35px;
     line-height: 42px;
+    padding: 0 15px;
 }
 
 .close-popup {
