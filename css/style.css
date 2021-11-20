@@ -204,7 +204,7 @@ body {
 }
 
 .header__title-desc::after{
-    content: "Kyiv - GMT+2, online 7:00-21:30";
+    content: "Kyiv - GMT+2, online 8:00-22:00";
     position: absolute;
     bottom: 0;
     opacity: 0;
